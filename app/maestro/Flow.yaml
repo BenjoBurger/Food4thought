@@ -1,0 +1,233 @@
+appId: <orbital-app>
+---
+- assertVisible: "Login Email Password  Sign In   Forget Password "
+- tapOn: "Sign Up"
+- assertVisible: "\U000f0009 Create Account Email Password  Sign Up "
+- tapOn: "Email"
+- inputText: "Hello"
+- tapOn: "Password"
+- "inputRandomText"
+- tapOn: "return"
+- tapOn: " Sign Up "
+- assertVisible: "Firebase: Error (auth/invalid-email)."
+- tapOn: "OK"
+- tapOn: "Email"
+- "eraseText"
+- "inputRandomEmail"
+- tapOn: "return"
+- tapOn: " Sign Up "
+- assertVisible: "User created"
+- tapOn: "OK"
+- tapOn:
+    id: "icon-button"
+    index: 0
+- tapOn: " Forget Password "
+- assertVisible: "\U000f0773 Forgot Password Enter your email and we will send you\
+    \ a link to reset your password  Email  Proceed "
+- tapOn: "Email"
+- inputText: "Hello"
+- tapOn: "return"
+- assertVisible: " Email not found "
+- tapOn: "Email"
+- "eraseText"
+- inputText: "noah_rodriguez_ke1z@gmail.com"
+- tapOn: "return"
+- extendedWaitUntil:
+    visible: " Link Sent to your email! "
+    timeout: 20000
+- tapOn:
+    id: "icon-button"
+    index: 0
+- tapOn: "Email"
+- inputText: "noah_rodriguez_ke1z@gmail.com"
+- tapOn: "Password"
+- inputText: "wRZhgsml"
+- tapOn: "return"
+- tapOn: " Sign In "
+- assertVisible: "Welcome, Guest "
+- assertVisible: "\U000f025a Ingredients"
+- assertVisible: "\U000f02d1 Favourites"
+- assertVisible: "\U000f0343 Log Out"
+- assertVisible: "\U000f0493 Settings"
+- tapOn: "\U000f02d1 Favourites"
+- assertVisible: "\U000f004d Favourites"
+- tapOn:
+    id: "icon-button"
+- tapOn: "\U000f0493 Settings"
+- assertVisible: "Settings"
+- assertVisible: "Change your name"
+- assertVisible: "Dishes rendered per page"
+- assertVisible: "Reset password"
+- tapOn: "Name"
+- "eraseText"
+- inputText: "Burger"
+- tapOn:
+    id: "icon-button"
+    index: 1
+- tapOn:
+    point: "44%,48%"
+- inputText: "20"
+- tapOn:
+    id: "icon-button"
+    index: 2
+- assertVisible: "Settings changed"
+- tapOn: "OK"
+- tapOn:
+    id: "icon-button"
+    index: 3
+- assertVisible: "Reset instructions sent to your email"
+- tapOn: "OK"
+- tapOn:
+    id: "icon-button"
+    index: 0
+- tapOn: "\U000f025a Ingredients"
+- tapOn: "Add Ingredients "
+- inputText: "carrot"
+- tapOn:
+    id: "cross-fade-icon-current"
+- tapOn:
+    id: "icon-button"
+    index: 1
+- tapOn: "Add Ingredients "
+- inputText: "butter"
+- tapOn:
+    id: "cross-fade-icon-current"
+- tapOn:
+    id: "icon-button"
+    index: 1
+- tapOn: "Add Ingredients "
+- inputText: "chicken"
+- tapOn:
+    id: "cross-fade-icon-current"
+- tapOn:
+    id: "icon-button"
+    index: 1
+- tapOn: "Add Ingredients "
+- inputText: "chili"
+- tapOn:
+    id: "cross-fade-icon-current"
+- tapOn:
+    id: "icon-button"
+    index: 1
+- assertVisible: "carrot \U000f01b4 butter \U000f01b4 chicken \U000f01b4 chili \U000f01b4"
+- tapOn:
+    id: "icon-button"
+    index: 5
+- assertVisible: "carrot \U000f01b4 butter \U000f01b4 chicken \U000f01b4"
+- tapOn: "\U000f0054 Dishes"
+- assertVisible: "The dishes shown will contain: \U000f0156 Any of the ingredients\
+    \ All of the ingredients"
+- tapOn: "Any of the ingredients"
+- assertVisible: "Dishes"
+- swipe:
+    start: "50%,54%"
+    end: "51%,6%"
+    duration: 831
+- swipe:
+    start: "50%,74%"
+    end: "44%,14%"
+    duration: 806
+- swipe:
+    start: "52%,19%"
+    end: "58%,83%"
+    duration: 1069
+- swipe:
+    start: "52%,19%"
+    end: "57%,85%"
+    duration: 5268
+- tapOn:
+    point: "50%,28%"
+- assertVisible: "Category"
+- assertVisible: "Serves"
+- assertVisible: "Preparation Time"
+- assertVisible: "Cooking Time"
+- swipe:
+    start: "50%,86%"
+    end: "47%,23%"
+    duration: 1173
+- swipe:
+    start: "48%,91%"
+    end: "50%,20%"
+    duration: 870
+- swipe:
+    start: "49%,27%"
+    end: "56%,96%"
+    duration: 751
+- swipe:
+    start: "49%,28%"
+    end: "51%,88%"
+    duration: 1174
+- swipe:
+    start: "50%,27%"
+    end: "54%,85%"
+    duration: 1078
+- tapOn:
+    id: "icon-button"
+    index: 0
+- tapOn:
+    point: "6%,9%"
+- assertVisible: "Category Appetisers \U000f0131 Mains \U000f0132 Sides \U000f0131\
+    \ Cakes \U000f0131 Snacks \U000f0131 Desserts \U000f0131 Drinks \U000f0131 Others\
+    \ \U000f0131 Complexity Ingredients:19 Filter mode: Match Any  \U000f0349 Filter"
+- tapOn:
+    point: "25%,18%"
+- tapOn:
+    point: "25%,23%"
+- tapOn:
+    point: "53%,23%"
+- tapOn:
+    point: "53%,23%"
+- swipe:
+    start: "59%,42%"
+    end: "30%,42%"
+    duration: 2774
+- tapOn:
+    id: "button"
+    index: 0
+- tapOn:
+    id: "button"
+    index: 1
+- assertVisible: "No dishes found!"
+- tapOn: "OK"
+- tapOn:
+    point: "7%,9%"
+- tapOn:
+    id: "button"
+    index: 0
+- tapOn:
+    id: "button"
+    index: 1
+- tapOn:
+    point: "50%,28%"
+- tapOn:
+    id: "icon-button"
+    index: 1
+- assertVisible: "Dish added to saved recipes"
+- tapOn: "OK"
+- tapOn:
+    id: "icon-button"
+    index: 0
+- tapOn: " Back "
+- tapOn:
+    id: "cross-fade-icon-current"
+- assertVisible: "Please key in a valid input!"
+- tapOn: "OK"
+- tapOn:
+    id: "icon-button"
+    index: 2
+- tapOn:
+    id: "icon-button"
+    index: 2
+- tapOn:
+    id: "icon-button"
+    index: 2
+- tapOn: "\U000f0054 Dishes"
+- assertVisible: "Minimum of 1 ingredient"
+- tapOn: "OK"
+- tapOn:
+    id: "icon-button"
+    index: 0
+- tapOn: "\U000f02d1 Favourites"
+- tapOn:
+    id: "icon-button"
+- tapOn: "\U000f0343 Log Out"

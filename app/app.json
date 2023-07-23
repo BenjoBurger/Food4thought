@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.e0957319.orbitalapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -32,6 +33,7 @@
       "eas": {
         "projectId": "aa4304b5-321c-4ae7-9074-4ce641c17efc"
       }
-    }
+    },
+    "owner": "food4thought"
   }
 }

@@ -1,0 +1,12 @@
+2023-07-23 21:50:26.061 xcodebuild[96499:5765901] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, id:5B8FB1E2-9E29-4DB6-B1C2-33BDBB15486B, OS:16.4, name:iPhone 14 Pro }
+{ platform:iOS Simulator, id:5B8FB1E2-9E29-4DB6-B1C2-33BDBB15486B, OS:16.4, name:iPhone 14 Pro }
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Users/benjoburger/Library/Developer/Xcode/DerivedData/orbitalapp-dungljuildzeyiflvqzaykgjkuxy/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseInstallations.build/Objects-normal/arm64/FIRInstallationsStoredAuthToken.o /Users/benjoburger/Downloads/Uni\ Stuff/Y1S2/Orbital/Food4thought/app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredAuthToken.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'FirebaseInstallations' from project 'Pods')
+	CompileC /Users/benjoburger/Library/Developer/Xcode/DerivedData/orbitalapp-dungljuildzeyiflvqzaykgjkuxy/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseInstallations.build/Objects-normal/arm64/FIRInstallationsStoredItem.o /Users/benjoburger/Downloads/Uni\ Stuff/Y1S2/Orbital/Food4thought/app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredItem.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'FirebaseInstallations' from project 'Pods')
+	CompileC /Users/benjoburger/Library/Developer/Xcode/DerivedData/orbitalapp-dungljuildzeyiflvqzaykgjkuxy/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseInstallations.build/Objects-normal/arm64/FIRInstallationsLogger.o /Users/benjoburger/Downloads/Uni\ Stuff/Y1S2/Orbital/Food4thought/app/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsLogger.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'FirebaseInstallations' from project 'Pods')
+(3 failures)
